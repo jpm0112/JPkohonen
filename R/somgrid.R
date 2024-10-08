@@ -3,6 +3,8 @@ somgrid <- function (xdim = 8, ydim = 6,
                      neighbourhood.fct = c("bubble", "gaussian"),
                      toroidal = FALSE) 
 {
+
+  print("HOLA")
   topo <- match.arg(topo)
   x <- 1L:xdim
   y <- 1L:ydim
