@@ -128,9 +128,9 @@ Rcpp::List RcppSupersom(
       /* Linear decays for radius and learning parameter */
       tmp = (double)(curIter) / (double)(totalIters);
       threshold = radii[0] - (radii[0] - radii[1]) * tmp;
-      if (threshold < 1.0) {
-        threshold = 0.5;
-      }
+      // if (threshold < 1.0) {
+      //   threshold = 0.5;
+      // }
       alpha = alphas[0] - (alphas[0] - alphas[1]) * tmp;
 
       /* Update changes */
